@@ -145,7 +145,7 @@ int main() {
     cout << "File name: " << endl;
     cin >> filename;
     Graph graph = readFromFile(filename);
-    if (filename == "demo.dot") {
+    if (filename == R"(C:\Users\wojte\Desktop\cos\NAI\Zaj11\a_demo2.dot)") {
         graph.dijkstra(0, 2);
         graph.A_star(0, 2, [](int, int) { return 0; });
     } else if (filename == R"(C:\Users\wojte\Desktop\cos\NAI\Zaj11\a_demo.dot)") {
